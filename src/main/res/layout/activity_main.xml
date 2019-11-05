@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_screen2"
+    android:orientation="vertical"
+   tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/mad_vortex2"
+        android:id="@+id/imageView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stars"
+        android:id="@+id/id1"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:id="@+id/begin"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_c"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ranking_button"
+    android:id="@+id/imageButton"
+    android:layout_below="@+id/imageView"
+    android:layout_toLeftOf="@+id/begin"
+    android:layout_toStartOf="@+id/begin" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sound_on"
+        android:id="@+id/sound_on"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/best_id"
+        android:layout_toEndOf="@+id/best_id" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_button"
+            android:id="@+id/shop"
+            android:layout_below="@+id/begin"
+            android:layout_alignLeft="@+id/imageButton"
+            android:layout_alignStart="@+id/imageButton" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/round"
+
+        android:layout_gravity="right"
+        android:background="@drawable/info"
+        android:layout_below="@+id/begin"
+        android:layout_toRightOf="@+id/begin"
+        android:layout_toEndOf="@+id/begin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BEST"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:id="@+id/best_id"
+
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/round"
+        android:layout_toStartOf="@+id/round"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=" 0 $"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/money_id"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignRight="@+id/imageView"-->
+        <!--android:layout_alignEnd="@+id/imageView" />-->
+
+</RelativeLayout>
